@@ -1,19 +1,19 @@
 class Glasspad < Formula
   desc "AI-friendly HTML/Markdown-artifact publisher: hand it markdown, get a URL — config-driven loopback or hosted, each page in a null-origin sandboxed iframe for dashboards, charts, and interactive UIs."
   homepage "https://github.com/jarimustonen/glasspad"
-  version "0.8.0"
+  version "0.9.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/jarimustonen/glasspad/releases/download/v0.8.0/glasspad-aarch64-apple-darwin.tar.xz"
-    sha256 "83d115311261971367e1d9fe77dacafc62721a0d3886eac47219efe746d5fb7f"
+    url "https://github.com/jarimustonen/glasspad/releases/download/v0.9.0/glasspad-aarch64-apple-darwin.tar.xz"
+    sha256 "b5fbfa1e844c15cea26449b4b3e97c097981b3e5d38ee3eae8be11e8b52528b8"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/jarimustonen/glasspad/releases/download/v0.8.0/glasspad-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "212244af2555177497039be8c687eaaac72b612c14def08066a3a6e0c7753803"
+      url "https://github.com/jarimustonen/glasspad/releases/download/v0.9.0/glasspad-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a737d9e19e34117b4da18f4d73f2537cf276a7dc0204e0393f09f1a670033c82"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jarimustonen/glasspad/releases/download/v0.8.0/glasspad-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "867883ffd9678c3d9f56ece97742f2a8f53351fbeb6073cc853f6bc2392947d7"
+      url "https://github.com/jarimustonen/glasspad/releases/download/v0.9.0/glasspad-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "6d4d3807c59fa93860b3fbe768a84b49ab4b89b3abadac9e553e7c7a220abd51"
     end
   end
   license "MIT"
